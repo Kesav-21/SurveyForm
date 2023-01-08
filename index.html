@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="./styles.css" type="text/css">
+</head>
+<body>
+<div id="header">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking your time to fill this form</p>
+    </div>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name" >Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your Name" required/>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email address" required>
+              </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Lucky Number</label><br>
+        <input type="number" name="number" id="number" placeholder="Enter your lucky number between 0 to 9" min="0" max="9">
+      </div>
+      <div class="form-group">
+        <label>What is your current role</label>
+        <select id="dropdown" name="current-role" required>
+          <option disable selected value>Select your role</option> 
+          <option value="Student">Student</option>
+          <option value="professional-worker">Professional worker</option>
+          <option value="part-time">Part-time</option> 
+          <option value="other">Others</option>
+        </select>
+      </div>
+      <div class="form-group checkboxes">
+        <label>Select the skills acquired<span> (Check all You like)</span></label>
+        <label><input class="choice" name="like" type="checkbox" value="Front-end">Front end</input></label>
+        <label> <input class="choice" name="like" type="checkbox" value="back-end">Back end</input></label>
+        <label> <input class="choice" name="like" type="checkbox" value="C/C++">C/C++</input></label>
+        <label><input class="choice" name="like" type="checkbox" value="Python">Python</input> </label>
+      </div>
+  <div class="form-group">
+    <label>Do you like freelancing</label>
+    <label><input class="choice" name="choice" value="yes" type="radio" checked>Yes</input>
+    </label>
+  <label>
+    <input class="choice" name="choice"value="no" type="radio">No</input>
+  </label>
+  </div>
+      </div>
+  <div class="form-group">
+    <label>Enter Feedback</label>
+    <textarea id="comments" class="textarea-box" name="comment" palceholder="Enter other things here"></textarea> 
+  </div>
+  <div class="form-group">
+    <button type="submit" id="submit" class="submit-button">Submit</button>
+  </div>
+  </form>
+</body>
+</html>
